@@ -59,12 +59,12 @@ An e-commerce platform is growing in transaction volume but suspects a large sha
 ### 2. Cohort Retention Analysis (`02_cohort_rfm_churn.ipynb`)
 Customers grouped by first purchase month. Retention tracked across 12 subsequent months.
 
-![Cohort Heatmap](data/processed/cohort_heatmap.png)
+![Cohort Heatmap](assets/cohort_heatmap.png)
 
 ### 3. RFM Segmentation
 Every customer scored 1–5 on Recency, Frequency, and Monetary value and assigned to one of 8 business segments.
 
-![RFM Segments](data/processed/rfm_segments.png)
+![RFM Segments](assets/rfm_segments.png)
 
 ### 4. Churn Prediction Model
 **Algorithm:** Random Forest Classifier  
@@ -72,7 +72,7 @@ Every customer scored 1–5 on Recency, Frequency, and Monetary value and assign
 **Features:** First order value, product category, review score, delivery delay, geography, seasonality  
 **ROC-AUC: 0.746** | Accuracy: 68%
 
-![Feature Importance](data/processed/feature_importance.png)
+![Feature Importance](assets/feature_importance.png)
 
 **Top predictors of repeat purchase:**
 1. First order value (higher spend → more likely to return)
