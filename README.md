@@ -8,7 +8,7 @@
 
 ## Business Problem
 
-An e-commerce platform is growing in transaction volume but suspects a large share of customers never return after their first purchase. This project investigates *who* churns, *when*, and *what* factors predict repeat purchase behaviour — so marketing and product teams can prioritise retention over acquisition.
+An e-commerce platform is growing in transaction volume but suspects a large share of customers never return after their first purchase. This project investigates *who* churns, *when*, and *what* factors predict repeat purchase behaviour, so marketing and product teams can prioritise retention over acquisition.
 
 ---
 
@@ -19,7 +19,7 @@ An e-commerce platform is growing in transaction volume but suspects a large sha
 | **97% of customers never returned** after their first order | Retention is a more urgent lever than acquisition |
 | Month-1 retention averages **5.8%**, dropping to **0.3%** by Month 3 | The first 30 days are the only meaningful retention window |
 | **Champions (7% of customers) drive 13.1% of revenue** | This segment must be protected and rewarded |
-| **At Risk segment holds 24.1% of revenue** — avg last seen 394 days ago | Win-back campaigns here have the highest ROI |
+| **At Risk segment holds 24.1% of revenue**, avg last seen 394 days ago | Win-back campaigns here have the highest ROI |
 | **First order value** is the strongest predictor of return | High-basket first orders signal long-term customer value |
 | Late deliveries directly correlate with 1-star reviews | Fulfilment quality is a retention driver, not just a logistics metric |
 
@@ -85,10 +85,10 @@ Every customer scored 1–5 on Recency, Frequency, and Monetary value and assign
 
 Core business questions answered in plain SQL (compatible with PostgreSQL / DuckDB / SQLite):
 
-- `monthly_revenue.sql` — Revenue trend with MoM growth
-- `cohort_retention.sql` — Retention matrix by first purchase cohort
-- `repeat_purchase_rate.sql` — Platform-wide repeat rate
-- `category_satisfaction.sql` — Revenue vs review score by product category
+- `monthly_revenue.sql`: Revenue trend with MoM growth
+- `cohort_retention.sql`: Retention matrix by first purchase cohort
+- `repeat_purchase_rate.sql`: Platform-wide repeat rate
+- `category_satisfaction.sql`: Revenue vs review score by product category
 
 ---
 
@@ -107,8 +107,8 @@ Four-page dashboard built for a marketing/product stakeholder audience:
 
 ## Recommendations
 
-1. **Launch a Day-7 and Day-30 re-engagement email sequence** for all new customers — the data shows this is the only window where a second purchase is plausible
-2. **Build a Champions loyalty tier** — 7% of customers generating 13% of revenue deserve differentiated treatment
+1. **Launch a Day-7 and Day-30 re-engagement email sequence** for all new customers, the data shows this is the only window where a second purchase is plausible
+2. **Build a Champions loyalty tier**, 7% of customers generating 13% of revenue deserve differentiated treatment
 3. **Use churn probability scores** to prioritise win-back campaigns on the At Risk and Cannot Lose Them segments
 4. **Fix fulfilment for high-revenue, low-satisfaction categories** before spending on paid acquisition in those verticals
 
